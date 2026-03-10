@@ -12,7 +12,7 @@ const dns = require('dns').promises;
 
 const DEFAULT_UUID = 'b389e09c-4e31-40da-a56c-433f507e615a';
 const UUID = (process.env.UUID || DEFAULT_UUID).trim();
-const PORT = parseInt(process.env.PORT || '1234', 10);
+const PORT = parseInt(process.env.PORT || '56818', 10);
 const WSPATH = process.env.WSPATH || UUID.substring(0, 8);
 
 const xhttpSessions = new Map();
@@ -380,4 +380,5 @@ server.listen(PORT, '0.0.0.0', () => {
     // console.log(`NodeJS Proxy Server Started`);
     // console.log(`Port: ${PORT}`);
     // console.log(`========================================`);
+
 });
